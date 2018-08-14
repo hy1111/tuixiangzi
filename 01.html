@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_472404_7ixdzd6basr.css">
+    <style>
+        span{
+            margin: 0px;
+            padding: 0px;
+        }
+        .tui{
+            width: 300px;
+            height: 460px;
+            border:1px solid black;
+            /*margin: 0 auto;*/
+            overflow: hidden;
+            background: url("05.png");
+        }
+        .header{
+            width: 100%;
+            height: 50px;
+            /*background:#0862bb ;*/
+            overflow: hidden;
+            position: relative;
+        }
+        .header-d{
+            position: absolute;
+            height: 800px;
+            top: -695px;
+            left: -248px;
+            background:#0862bb;
+            width: 800px;
+            border-radius: 800px 400px;
+            transform:rotate(45deg);
+            box-shadow: 2px 2px #0a4d8e;
+        }
+        .header-c{
+            width: 200px;
+            margin: 10px auto;
+        }
+        .header-c input{
+            position: relative;
+            z-index: 10;
+            width: 50px;
+            height:20px;
+            background:#052e56;
+            border:none;
+            border-radius: 5px;
+            padding: 1px 5px;
+            color: white;
+            font-size: 16px;
+            text-align: right;
+        }
+        .header-c img{
+            position: relative;
+            z-index: 10;
+            vertical-align:middle;
+        }
+        .center{
+            width: 240px;
+            height: 320px;
+            /*border:1px solid #ccc;*/
+            margin: 10px auto;
+            /*display: flex;*/
+        }
+        .aa{
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            /*background: red;*/
+            margin-bottom: -5px;
+        }
+        .hh{
+            background: url(" q.png") !important;
+        }
+        .gg{
+            background: url(" t.png") !important;
+        }
+
+        .b{
+            position: relative;
+            z-index: 11;
+            background: url(" b.png") !important;
+        }
+        .bb{
+              position: relative;
+              z-index: 15;
+              background: url(" r.png") !important;
+          }
+        .x{
+            position: relative;
+            z-index: 11;
+            background: url(" x.png") !important;
+        }
+        .fool{
+            position: fixed;
+            top: 409px;
+            width: 100%;
+            height: 60px;
+            overflow: hidden;
+        }
+        .fool>div{
+            float: left;
+        }
+        .fool-y{
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background:white;
+            margin: 0px -60px;
+            box-shadow: 1px 0px #0862bb;
+            position: relative;
+        }
+        .fool-y-one{
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background:#0862bb;
+
+
+        }
+        .fool-y-two{
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background:white;
+        }
+        .fool-y-two img{
+            margin: 14px 40px;
+        }
+        .fool-y span{
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background: yellow;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .s1{
+            top: 13px;
+            left: 70px;
+        }
+        .s2{
+            top: 25px;
+            left: 88px;
+        }
+        .s3{
+            top: 42px;
+            left: 98px;
+        }
+        .fool-c{
+            width: 100px;
+            height: 40px;
+            background:#044a8e;
+            margin: 20px 100px;
+        }
+        .fool-c-one{
+
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background:#044a8e;
+            margin: 0px -20px;
+        }
+        .fool-c i{
+            float: left;
+            font-size: 25px;
+            color: pink;
+            margin:10px 8px;
+        }
+        .fan{
+            width: 110px;
+            height: 60px;
+            background: #0862bb;
+            border-radius: 20px 0px 0px 0px;
+            margin: 0px -110px;
+        }
+        .fan>i{
+            /*background: white;*/
+            float: left;
+            font-size: 60px;
+            color: pink;
+            margin-right: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="tui">
+        <div class="header">
+            <div class="header-d"></div>
+            <div class="header-c">
+                <span><img src="03.png"></span>
+                <input type="text" value="1" class="ipt" disabled>
+                <span><img src="04.png"></span>
+                <input type="text" class="ipt1" disabled>
+            </div>
+
+        </div>
+        <div class="center"></div>
+        <div class="fool">
+            <div class="fool-y">
+                <div class="fool-y-one"></div>
+                <div class="fool-y-two">
+                    <img src="j.png" >
+                </div>
+                <span class="s1"></span>
+                <span class="s2"></span>
+                <span class="s3"></span>
+            </div>
+            <div class="fool-c">
+                <div class="fool-c-one">
+                    <i class="iconfont icon-fanhuishangyiji"></i>
+                </div>
+                <i class="iconfont icon-huanyipi" style="margin: -30px 10px"></i>
+            </div>
+            <div class="fan">
+                <i class="iconfont icon-07jiantouxiangzuofill"></i>
+                <i class="iconfont icon-07jiantouxiangyoufill" ></i>
+            </div>
+        </div>
+
+    </div>
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="01.js"></script>
+</body>
+</html>
